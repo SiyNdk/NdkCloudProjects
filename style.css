@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -14,45 +14,42 @@ body {
   overflow: hidden;
 }
 
+/* Poster */
 .poster {
   text-align: center;
   padding: 50px 70px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-  animation: float 6s ease-in-out infinite, fadeIn 1.5s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
+/* Text */
 h1 {
   font-size: 4rem;
   color: #fff;
-  font-weight: 600;
-  letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
 p {
   font-size: 1.2rem;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Button */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+button:hover {
+  transform: scale(1.1);
 }
